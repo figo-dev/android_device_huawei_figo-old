@@ -184,5 +184,8 @@ VENDOR_SECURITY_PATCH := 2019-11-01
 # Sepolicy
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
+# Treble
+BOARD_VNDK_VERSION := current
+
 # Get non-open-source specific aspects
 include vendor/huawei/figo/BoardConfigVendor.mk
