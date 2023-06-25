@@ -17,6 +17,9 @@
 DEVICE_PATH := device/huawei/figo
 
 # 64 Bit
+ANDROID_64 :=true
+TARGET_SUPPORTS_32_BIT_APPS := true
+TARGET_SUPPORTS_64_BIT_APPS := true
 TARGET_USES_64_BIT_BINDER := true
 
 # Architecture
@@ -131,6 +134,11 @@ TARGET_COPY_OUT_SYSTEM_EXT := system/system_ext
 TARGET_COPY_OUT_VENDOR := vendor
 
 TARGET_USERIMAGES_USE_F2FS := true
+
+# Platform
+HISI_TARGET_PRODUCT := hi6250
+TARGET_BOARD_GPU := mali-t830mp2
+TARGET_BOARD_PLATFORM := hi6250
 
 # Security Patch Level
 VENDOR_SECURITY_PATCH := 2019-11-01
