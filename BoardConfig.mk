@@ -147,6 +147,10 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/system_ext.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
+# Ramdisk
+BOARD_CUSTOM_BOOTIMG := true
+BOARD_CUSTOM_BOOTIMG_MK := $(DEVICE_PATH)/ramdisk/mkbootimg.mk
+
 # Security Patch Level
 VENDOR_SECURITY_PATCH := 2019-11-01
 
