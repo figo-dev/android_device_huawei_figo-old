@@ -87,5 +87,14 @@ PRODUCT_PACKAGES += \
     libion \
     libvulkan \
 
+# Recovery
+AB_OTA_UPDATER := false
+
+PRODUCT_PACKAGES += \
+    fstab.hi6250 \
+    fstab.modem \
+    init.recovery.hi6250.rc \
+    resize2fs_static \
+
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/huawei/figo/figo-vendor.mk)
