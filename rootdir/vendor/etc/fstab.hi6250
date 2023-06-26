@@ -4,7 +4,7 @@
 # specify MF_CHECK, and must come before any filesystems that do specify MF_CHECK
 /dev/block/platform/hi_mci.0/by-name/kernel              /boot          emmc    defaults    recoveryonly
 /dev/block/platform/hi_mci.0/by-name/recovery_ramdisk    /recovery      emmc    defaults    recoveryonly
-/dev/block/platform/hi_mci.0/by-name/system    /system    ext4    ro,barrier=1    wait
+/dev/block/platform/hi_mci.0/by-name/system    /          ext4    ro,barrier=1    wait
 /dev/block/platform/hi_mci.0/by-name/vendor    /vendor    ext4    ro,barrier=1    wait
 /dev/block/platform/hi_mci.0/by-name/version   /version   ext4    ro,barrier=1    wait
 /dev/block/platform/hi_mci.0/by-name/cust    /cust    ext4    ro,barrier=1    wait
