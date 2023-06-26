@@ -24,6 +24,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 DEVICE_PATH := device/huawei/figo
 
+PRODUCT_CHARACTERISTICS := nosdcard
+
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
