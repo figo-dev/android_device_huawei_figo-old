@@ -243,6 +243,7 @@ PRODUCT_PACKAGES += \
     init.vowifi.rc \
     isplogcat.rc \
     modemchr_service.rc \
+    ueventd.hi6250.rc \
 
 # Recovery
 AB_OTA_UPDATER := false
