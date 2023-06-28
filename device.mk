@@ -178,6 +178,12 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/rootdir/vendor/etc/libnfc_nxp_venus_L21.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc_nxp_venus_L21.conf \
     $(DEVICE_PATH)/rootdir/vendor/etc/libnfc_nxp_venus_L31.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc_nxp_venus_L31.conf \
 
+# Performance
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/rootdir/vendor/etc/perfgenius_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perfgenius_config.xml \
+    $(DEVICE_PATH)/rootdir/vendor/etc/perfgenius_event_policy.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perfgenius_event_policy.xml \
+    $(DEVICE_PATH)/rootdir/vendor/etc/perfgenius_scenario_policy.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perfgenius_scenario_policy.xml \
+
 # Recovery
 AB_OTA_UPDATER := false
 
