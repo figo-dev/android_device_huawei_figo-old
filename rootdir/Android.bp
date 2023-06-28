@@ -1,0 +1,239 @@
+//
+// Copyright (C) 2023 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+// Huawei's Interfaces
+prebuilt_hidl_interfaces {
+    name: "hidl_iked_interface",
+    interfaces: [
+        "vendor.huawei.hardware.iked@1.0::IIkedDevice",
+    ],
+}
+
+prebuilt_hidl_interfaces {
+    name: "hidl_modemlogcat_interface",
+    interfaces: [
+        "vendor.huawei.hardware.modemlogcat@1.0::IModemlogcat",
+    ],
+}
+
+// Ramdisk's Charger
+
+prebuilt_etc {
+    name: "init.charger.rc",
+    src: "vendor/etc/init/charger/init.charger.rc",
+    sub_dir: "init/charger",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.chip.charger.rc",
+    src: "vendor/etc/init/charger/init.chip.charger.rc",
+    sub_dir: "init/charger",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.chip.usb.rc",
+    src: "vendor/etc/init/charger/init.chip.usb.rc",
+    sub_dir: "init/charger",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.hisi.usb.rc",
+    src: "vendor/etc/init/charger/init.hisi.usb.rc",
+    sub_dir: "init/charger",
+    vendor: true,
+}
+
+// Ramdisk's Connectivity
+
+prebuilt_etc {
+    name: "init.connectivity.bcm43xx.rc",
+    src: "vendor/etc/init/connectivity/init.connectivity.bcm43xx.rc",
+    sub_dir: "init/charger",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.connectivity.bcm43455.rc",
+    src: "vendor/etc/init/connectivity/init.connectivity.bcm43455.rc",
+    sub_dir: "init/charger",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.connectivity.gps.rc",
+    src: "vendor/etc/init/connectivity/init.connectivity.gps.rc",
+    sub_dir: "init/charger",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.connectivity.hi1102.rc",
+    src: "vendor/etc/init/connectivity/init.connectivity.hi1102.rc",
+    sub_dir: "init/charger",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.connectivity.hisi.rc",
+    src: "vendor/etc/init/connectivity/init.connectivity.hisi.rc",
+    sub_dir: "init/charger",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.recovery.hi1102.rc",
+    src: "vendor/etc/init/connectivity/init.recovery.hi1102.rc",
+    sub_dir: "init/charger",
+    vendor: true,
+}
+
+// Ramdisk's HW
+
+prebuilt_etc {
+    name: "init.hi6250.rc",
+    src: "vendor/etc/init/hw/init.hi6250.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "activity_recognition_service.rc",
+    src: "vendor/etc/init/activity_recognition_service.rc",
+    sub_dir: "init/",
+    vendor: true,
+}
+prebuilt_etc {
+    name: "aptouch_daemon.rc",
+    src: "vendor/etc/init/aptouch_daemon.rc",
+    sub_dir: "init/",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "hinetmanager.rc",
+    src: "vendor/etc/init/hinetmanager.rc",
+    sub_dir: "init/",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "hisecd.rc",
+    src: "vendor/etc/init/hisecd.rc",
+    sub_dir: "init/",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.audio.rc",
+    src: "vendor/etc/init/init.audio.rc",
+    sub_dir: "init/",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.balong_modem.rc",
+    src: "vendor/etc/init/init.balong_modem.rc",
+    sub_dir: "init/",
+    vendor: true,
+}
+prebuilt_etc {
+    name: "init.connectivity.rc",
+    src: "vendor/etc/init/init.connectivity.rc",
+    sub_dir: "init/",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.device.rc",
+    src: "vendor/etc/init/init.device.rc",
+    sub_dir: "init/",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.extmodem.rc",
+    src: "vendor/etc/init/init.extmodem.rc",
+    sub_dir: "init/",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.hisi.rc",
+    src: "vendor/etc/init/init.hisi.rc",
+    sub_dir: "init/",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.ko.rc",
+    src: "vendor/etc/init/init.ko.rc",
+    sub_dir: "init/",
+    vendor: true,
+}
+prebuilt_etc {
+    name: "init.manufacture.rc",
+    src: "vendor/etc/init/init.manufacture.rc",
+    sub_dir: "init/",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.performance.rc",
+    src: "vendor/etc/init/init.performance.rc",
+    sub_dir: "init/",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.platform.rc",
+    src: "vendor/etc/init/init.platform.rc",
+    sub_dir: "init/",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.post-fs-data.rc",
+    src: "vendor/etc/init/init.post-fs-data.rc",
+    sub_dir: "init/",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.protocol.rc",
+    src: "vendor/etc/init/init.protocol.rc",
+    sub_dir: "init/",
+    vendor: true,
+}
+prebuilt_etc {
+    name: "init.tee.rc",
+    src: "vendor/etc/init/init.tee.rc",
+    sub_dir: "init/",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.vowifi.rc",
+    src: "vendor/etc/init/init.vowifi.rc",
+    sub_dir: "init/",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "isplogcat.rc",
+    src: "vendor/etc/init/isplogcat.rc",
+    sub_dir: "init/",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "modemchr_service.rc",
+    src: "vendor/etc/init/modemchr_service.rc",
+    sub_dir: "init/",
+    vendor: true,
+}

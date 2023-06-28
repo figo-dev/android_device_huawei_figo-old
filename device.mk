@@ -73,7 +73,7 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/rootdir/vendor/etc/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/audio_effects.xml \
     $(DEVICE_PATH)/rootdir/vendor/etc/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/audio_policy_configuration.xml \
     $(DEVICE_PATH)/rootdir/vendor/etc/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
-    $(DEVICE_PATH)/rootdir/vendor/etc/audio_policy_configuration.xml :$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
+    $(DEVICE_PATH)/rootdir/vendor/etc/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
 
 PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml \
@@ -208,6 +208,41 @@ PRODUCT_COPY_FILES += \
 # Public Libraries
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/rootdir/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
+
+# Ramdisk
+PRODUCT_PACKAGES += \
+    activity_recognition_service.rc \
+    aptouch_daemon.rc \
+    hinetmanager.rc \
+    hisecd.rc \
+    init.audio.rc \
+    init.balong_modem.rc \
+    init.charger.rc \
+    init.chip.charger.rc \
+    init.chip.usb.rc \
+    init.connectivity.bcm43xx.rc \
+    init.connectivity.bcm43455.rc \
+    init.connectivity.gps.rc \
+    init.connectivity.hi1102.rc \
+    init.connectivity.hisi.rc \
+    init.connectivity.rc \
+    init.device.rc \
+    init.extmodem.rc \
+    init.hi6250.rc \
+    init.hisi.rc \
+    init.hisi.usb.rc \
+    init.ko.rc \
+    init.manufacture.rc \
+    init.performance.rc \
+    init.platform.rc \
+    init.post-fs-data.rc \
+    init.protocol.rc \
+    init.recovery.hi1102.rc \
+    init.recovery.huawei.rc \
+    init.tee.rc \
+    init.vowifi.rc \
+    isplogcat.rc \
+    modemchr_service.rc \
 
 # Recovery
 AB_OTA_UPDATER := false
