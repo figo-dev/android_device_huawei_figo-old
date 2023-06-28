@@ -269,6 +269,10 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/rootdir/vendor/etc/modemConfig/viacbp82d_shutdown_log.bcfg:$(TARGET_COPY_OUT_VENDOR)/etc/modemConfig/viacbp82d_shutdown_log.bcfg \
     $(DEVICE_PATH)/rootdir/vendor/etc/factory_modem.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/factory_modem.cfg \
 
+# Seccomp Policy
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/rootdir/vendor/etc/seccomp_policy/configstore@1.1.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/configstore@1.1.policy \
+
 # Soong Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \
