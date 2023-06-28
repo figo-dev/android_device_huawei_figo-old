@@ -259,6 +259,16 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.2 \
     libxml2 \
 
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/rootdir/vendor/etc/modemConfig/balong/basic_name:$(TARGET_COPY_OUT_VENDOR)/etc/modemConfig/balong/basic_name \
+    $(DEVICE_PATH)/rootdir/vendor/etc/modemConfig/balong/FieldTest.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/modemConfig/balong/FieldTest.cfg \
+    $(DEVICE_PATH)/rootdir/vendor/etc/modemConfig/VIA/basic_name:$(TARGET_COPY_OUT_VENDOR)/etc/modemConfig/VIA/basic_name \
+    $(DEVICE_PATH)/rootdir/vendor/etc/modemConfig/VIA/viacbp82d_FieldTest.bcfg:$(TARGET_COPY_OUT_VENDOR)/etc/modemConfig/VIA/viacbp82d_FieldTest.bcfg \
+    $(DEVICE_PATH)/rootdir/vendor/etc/modemConfig/hids_ue_msg.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/modemConfig/hids_ue_msg.cfg \
+    $(DEVICE_PATH)/rootdir/vendor/etc/modemConfig/viacbp82d_log.bcfg:$(TARGET_COPY_OUT_VENDOR)/etc/modemConfig/viacbp82d_log.bcfg \
+    $(DEVICE_PATH)/rootdir/vendor/etc/modemConfig/viacbp82d_shutdown_log.bcfg:$(TARGET_COPY_OUT_VENDOR)/etc/modemConfig/viacbp82d_shutdown_log.bcfg \
+    $(DEVICE_PATH)/rootdir/vendor/etc/factory_modem.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/factory_modem.cfg \
+
 # Soong Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \
