@@ -128,6 +128,13 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@2.0 \
     android.hardware.gnss@2.1 \
 
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/rootdir/vendor/etc/gnss/config/gnss_lss_config_thirdparty.bin:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/config/gnss_lss_config_thirdparty.bin \
+    $(DEVICE_PATH)/rootdir/vendor/etc/gnss/config/gnss_lss_rfg_key_thirdparty.pem:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/config/gnss_lss_rfg_key_thirdparty.pem \
+    $(DEVICE_PATH)/rootdir/vendor/etc/gnss/config/gnss_lss_slp_thirdparty.p12:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/config/gnss_lss_slp_thirdparty.p12 \
+    $(DEVICE_PATH)/rootdir/vendor/etc/gnss/config/gnss_suplconfig_hisi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/config/gnss_suplconfig_hisi.xml \
+    $(DEVICE_PATH)/rootdir/vendor/etc/gnss/gnss_lss_thirdparty.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/gnss_lss_thirdparty.conf \
+
 # Graphics
 PRODUCT_PACKAGES += \
     libion \
