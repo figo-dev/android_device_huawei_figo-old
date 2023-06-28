@@ -25,6 +25,15 @@ LOCAL_SRC_FILES    := vendor/etc/fstab.hi6250
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE       := fstab.hi6250_ramdisk
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_PATH  := $(TARGET_RAMDISK_OUT)
+LOCAL_MODULE_STEM  := fstab.hi6250
+LOCAL_MODULE_TAGS  := optional
+LOCAL_SRC_FILES    := vendor/etc/fstab.hi6250
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE       := fstab.modem
 LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH  := $(TARGET_OUT_VENDOR_ETC)

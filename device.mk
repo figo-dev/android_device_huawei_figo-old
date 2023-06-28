@@ -250,6 +250,7 @@ AB_OTA_UPDATER := false
 
 PRODUCT_PACKAGES += \
     fstab.hi6250 \
+    fstab.hi6250_ramdisk \
     fstab.modem \
     init.recovery.hi6250.rc \
     resize2fs_static \
