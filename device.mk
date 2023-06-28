@@ -159,6 +159,25 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml \
 
+# NFC
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/rootdir/odm/etc/libnfc-brcm.conf:$(TARGET_COPY_OUT_ODM)/etc/libnfc-brcm.conf \
+    $(DEVICE_PATH)/rootdir/odm/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_ODM)/etc/libnfc-nci.conf \
+    $(DEVICE_PATH)/rootdir/odm/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_ODM)/etc/libnfc-nxp.conf \
+    $(DEVICE_PATH)/rootdir/odm/etc/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_ODM)/etc/libnfc-nxp_RF.conf \
+    $(DEVICE_PATH)/rootdir/vendor/etc/libnfc_brcm_bln_L21.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc_brcm_bln_L21.conf \
+    $(DEVICE_PATH)/rootdir/vendor/etc/libnfc_brcm_nem_L21.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc_brcm_nem_L21.conf \
+    $(DEVICE_PATH)/rootdir/vendor/etc/libnfc_brcm_nmo_L21.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc_brcm_nmo_L21.conf \
+    $(DEVICE_PATH)/rootdir/vendor/etc/libnfc_brcm_pra_L31.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc_brcm_pra_L31.conf \
+    $(DEVICE_PATH)/rootdir/vendor/etc/libnfc_brcm_venus_L21.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc_brcm_venus_L21.conf \
+    $(DEVICE_PATH)/rootdir/vendor/etc/libnfc_brcm_venus_L31.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc_brcm_venus_L31.conf \
+    $(DEVICE_PATH)/rootdir/vendor/etc/libnfc_nxp_bln_L21.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc_nxp_bln_L21.conf \
+    $(DEVICE_PATH)/rootdir/vendor/etc/libnfc_nxp_nem_L21.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc_nxp_nem_L21.conf \
+    $(DEVICE_PATH)/rootdir/vendor/etc/libnfc_nxp_nmo_L21.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc_nxp_nmo_L21.conf \
+    $(DEVICE_PATH)/rootdir/vendor/etc/libnfc_nxp_pra_L31.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc_nxp_pra_L31.conf \
+    $(DEVICE_PATH)/rootdir/vendor/etc/libnfc_nxp_venus_L21.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc_nxp_venus_L21.conf \
+    $(DEVICE_PATH)/rootdir/vendor/etc/libnfc_nxp_venus_L31.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc_nxp_venus_L31.conf \
+
 # Recovery
 AB_OTA_UPDATER := false
 
