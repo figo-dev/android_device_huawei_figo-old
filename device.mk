@@ -140,6 +140,23 @@ PRODUCT_PACKAGES += \
     libion \
     libvulkan \
 
+# HiSilicon
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/rootdir/vendor/etc/ikedconfig/default.conf:$(TARGET_COPY_OUT_VENDOR)/etc/ikedconfig/default.conf \
+    $(DEVICE_PATH)/rootdir/vendor/etc/ikedconfig/ikedconfig.ini:$(TARGET_COPY_OUT_VENDOR)/etc/ikedconfig/ikedconfig.ini \
+    $(DEVICE_PATH)/rootdir/vendor/etc/ikedconfig/racoon2.conf:$(TARGET_COPY_OUT_VENDOR)/etc/ikedconfig/racoon2.conf \
+    $(DEVICE_PATH)/rootdir/vendor/etc/ikedconfig/tunnel_ike.conf:$(TARGET_COPY_OUT_VENDOR)/etc/ikedconfig/tunnel_ike.conf \
+    $(DEVICE_PATH)/rootdir/vendor/etc/ikedconfig/tunnel_ike_natt.conf:$(TARGET_COPY_OUT_VENDOR)/etc/ikedconfig/tunnel_ike_natt.conf \
+    $(DEVICE_PATH)/rootdir/vendor/etc/ikedconfig/vals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/ikedconfig/vals.conf \
+    $(DEVICE_PATH)/rootdir/vendor/etc/device_state_monitor.conf:$(TARGET_COPY_OUT_VENDOR)/etc/device_state_monitor.conf \
+    $(DEVICE_PATH)/rootdir/vendor/etc/geoloc.conf:$(TARGET_COPY_OUT_VENDOR)/etc/geoloc.conf \
+    $(DEVICE_PATH)/rootdir/vendor/etc/selinux_dmd.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/selinux_dmd.cfg \
+    $(DEVICE_PATH)/rootdir/vendor/etc/topazhp.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/topazhp.cfg \
+    $(DEVICE_PATH)/rootdir/vendor/etc/unrm_file_list.conf:$(TARGET_COPY_OUT_VENDOR)/etc/unrm_file_list.conf \
+    $(DEVICE_PATH)/rootdir/vendor/etc/vdec_atlas.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/vdec_atlas.cfg \
+    $(DEVICE_PATH)/rootdir/vendor/etc/viacbp82d_log.bcfg:$(TARGET_COPY_OUT_VENDOR)/etc/viacbp82d_log.bcfg \
+    $(DEVICE_PATH)/rootdir/vendor/etc/viacbp82d_shutdown_log.bcfg:$(TARGET_COPY_OUT_VENDOR)/etc/viacbp82d_shutdown_log.bcfg \
+
 # Keylayouts
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/rootdir/vendor/usr/idc/cyttsp4_mt.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/cyttsp4_mt.idc \
