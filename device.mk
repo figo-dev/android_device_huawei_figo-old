@@ -277,5 +277,14 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \
 
+# WiFi
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/rootdir/vendor/etc/wifi/hostapd_hisi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/hostapd_hisi.conf \
+    $(DEVICE_PATH)/rootdir/vendor/etc/wifi/p2p_supplicant_hisi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/p2p_supplicant_hisi.conf \
+    $(DEVICE_PATH)/rootdir/vendor/etc/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/p2p_supplicant_overlay.conf \
+    $(DEVICE_PATH)/rootdir/vendor/etc/wifi/wpa_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wpa_supplicant.conf \
+    $(DEVICE_PATH)/rootdir/vendor/etc/wifi/wpa_supplicant_hisi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wpa_supplicant_hisi.conf \
+    $(DEVICE_PATH)/rootdir/vendor/etc/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wpa_supplicant_overlay.conf \
+
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/huawei/figo/figo-vendor.mk)
