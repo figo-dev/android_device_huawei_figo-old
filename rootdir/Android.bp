@@ -54,42 +54,42 @@ prebuilt_etc {
 prebuilt_etc {
     name: "init.connectivity.bcm43xx.rc",
     src: "vendor/etc/init/connectivity/init.connectivity.bcm43xx.rc",
-    sub_dir: "init/charger",
+    sub_dir: "init/connectivity",
     vendor: true,
 }
 
 prebuilt_etc {
     name: "init.connectivity.bcm43455.rc",
     src: "vendor/etc/init/connectivity/init.connectivity.bcm43455.rc",
-    sub_dir: "init/charger",
+    sub_dir: "init/connectivity",
     vendor: true,
 }
 
 prebuilt_etc {
     name: "init.connectivity.gps.rc",
     src: "vendor/etc/init/connectivity/init.connectivity.gps.rc",
-    sub_dir: "init/charger",
+    sub_dir: "init/connectivity",
     vendor: true,
 }
 
 prebuilt_etc {
     name: "init.connectivity.hi1102.rc",
     src: "vendor/etc/init/connectivity/init.connectivity.hi1102.rc",
-    sub_dir: "init/charger",
+    sub_dir: "init/connectivity",
     vendor: true,
 }
 
 prebuilt_etc {
     name: "init.connectivity.hisi.rc",
     src: "vendor/etc/init/connectivity/init.connectivity.hisi.rc",
-    sub_dir: "init/charger",
+    sub_dir: "init/connectivity",
     vendor: true,
 }
 
 prebuilt_etc {
     name: "init.recovery.hi1102.rc",
     src: "vendor/etc/init/connectivity/init.recovery.hi1102.rc",
-    sub_dir: "init/charger",
+    sub_dir: "init/connectivity",
     vendor: true,
 }
 
