@@ -47,6 +47,35 @@ PRODUCT_PACKAGES += \
     tinyplay \
 
 PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/rootdir/odm/etc/audio/algorithm/algorithm_FIGO_normal.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/algorithm/algorithm_FIGO_normal.xml \
+    $(DEVICE_PATH)/rootdir/odm/etc/audio/dts/dts_FIGO_normal.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/dts/dts_FIGO_normal.xml \
+    $(DEVICE_PATH)/rootdir/odm/etc/audio/hi6402/mixer_volumes_FIGO_ce.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/hi6402/mixer_volumes_FIGO_ce.xml \
+    $(DEVICE_PATH)/rootdir/odm/etc/audio/hissc/mixer_paths_FIGO.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/hissc/mixer_paths_FIGO.xml \
+    $(DEVICE_PATH)/rootdir/odm/etc/audio/hissc/mixer_volumes_FIGO_ce.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/hissc/mixer_volumes_FIGO_ce.xml \
+    $(DEVICE_PATH)/rootdir/odm/etc/audio/hissc/mixer_volumes_FIGO_cmcciot.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/hissc/mixer_volumes_FIGO_cmcciot.xml \
+    $(DEVICE_PATH)/rootdir/odm/etc/audio/hissc/mixer_volumes_FIGO_gcf.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/hissc/mixer_volumes_FIGO_gcf.xml \
+    $(DEVICE_PATH)/rootdir/odm/etc/audio/hissc/mixer_volumes_FIGO_normal.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/hissc/mixer_volumes_FIGO_normal.xml \
+    $(DEVICE_PATH)/rootdir/odm/etc/audio/hissc/mixer_volumes_FIGO_telecomiot.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/hissc/mixer_volumes_FIGO_telecomiot.xml \
+    $(DEVICE_PATH)/rootdir/odm/etc/audio/hissc/mixer_volumes_FIGO_unicomiot.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/hissc/mixer_volumes_FIGO_unicomiot.xml \
+    $(DEVICE_PATH)/rootdir/odm/etc/audio/hissc/pop_seq_FIGO.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/hissc/pop_seq_FIGO.xml \
+    $(DEVICE_PATH)/rootdir/odm/etc/audio/mbdrc/mbdrc_FIGO_normal.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/mbdrc/mbdrc_FIGO_normal.xml \
+    $(DEVICE_PATH)/rootdir/odm/etc/audio/modem/modem_FIGO_cmcciot.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/modem/modem_FIGO_cmcciot.xml \
+    $(DEVICE_PATH)/rootdir/odm/etc/audio/modem/modem_FIGO_gcf.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/modem/modem_FIGO_gcf.xml \
+    $(DEVICE_PATH)/rootdir/odm/etc/audio/modem/modem_FIGO_normal.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/modem/modem_FIGO_normal.xml \
+    $(DEVICE_PATH)/rootdir/odm/etc/audio/modem/modem_FIGO_telecomiot.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/modem/modem_FIGO_telecomiot.xml \
+    $(DEVICE_PATH)/rootdir/odm/etc/audio/modem/modem_FIGO_unicomiot.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/modem/modem_FIGO_unicomiot.xml \
+    $(DEVICE_PATH)/rootdir/odm/etc/audio/sws/sws_3d_FIGO_normal.cfg:$(TARGET_COPY_OUT_ODM)/etc/audio/sws/sws_3d_FIGO_normal.cfg \
+    $(DEVICE_PATH)/rootdir/odm/etc/audio/sws/sws_3d_FIGO-Oversea_normal.cfg:$(TARGET_COPY_OUT_ODM)/etc/audio/sws/sws_3d_FIGO-Oversea_normal.cfg \
+    $(DEVICE_PATH)/rootdir/odm/etc/audio/sws/sws_FIGO_normal.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/sws/sws_FIGO_normal.xml \
+    $(DEVICE_PATH)/rootdir/odm/etc/audio/sws/sws_FIGO-Oversea_normal.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/sws/sws_FIGO-Oversea_normal.xml \
+    $(DEVICE_PATH)/rootdir/odm/etc/audio/volume/audio_policy_volumes.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/volume/audio_policy_volumes.xml \
+    $(DEVICE_PATH)/rootdir/odm/etc/audio/volume/volume_point.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/volume/volume_point.xml \
+    $(DEVICE_PATH)/rootdir/vendor/etc/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/audio_effects.xml \
+    $(DEVICE_PATH)/rootdir/vendor/etc/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/audio_policy_configuration.xml \
+    $(DEVICE_PATH)/rootdir/vendor/etc/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
+    $(DEVICE_PATH)/rootdir/vendor/etc/audio_policy_configuration.xml :$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
+
+PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/a2dp_in_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_in_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/bluetooth_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_audio_policy_configuration.xml \
