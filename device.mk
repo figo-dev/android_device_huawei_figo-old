@@ -184,6 +184,10 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/rootdir/vendor/etc/perfgenius_event_policy.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perfgenius_event_policy.xml \
     $(DEVICE_PATH)/rootdir/vendor/etc/perfgenius_scenario_policy.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perfgenius_scenario_policy.xml \
 
+# Power
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/rootdir/system/product/etc/xml/power_profile.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/xml/power_profile.xml \
+
 # Recovery
 AB_OTA_UPDATER := false
 
