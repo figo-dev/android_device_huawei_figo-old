@@ -140,6 +140,12 @@ PRODUCT_PACKAGES += \
     libion \
     libvulkan \
 
+# Keylayouts
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/rootdir/vendor/usr/idc/cyttsp4_mt.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/cyttsp4_mt.idc \
+    $(DEVICE_PATH)/rootdir/vendor/usr/idc/fingerprint.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/fingerprint.idc \
+    $(DEVICE_PATH)/rootdir/vendor/usr/keylayout/fingerprint.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/fingerprint.kl \
+
 # Recovery
 AB_OTA_UPDATER := false
 
